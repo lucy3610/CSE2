@@ -32,14 +32,13 @@ double paSalesTax = 0.06;
 double pantsTotal, shirtsTotal, beltsTotal, subtotal, salesTax;
 
 //run the calculations
-pantsTotal=numPants*pantPrice;
-shirtsTotal=numShirts*shirtPrice;
-beltsTotal=numBelts*beltPrice;
-subtotal=(pantsTotal)+(shirtsTotal)+(beltsTotal);
-salesTax=(pantsTotal*paSalesTax)+(shirtsTotal*paSalesTax)+(beltsTotal*paSalesTax);
+pantsTotal=numPants*pantPrice; //the total cost of pants is the number of pants times the price of one pair of pants
+shirtsTotal=numShirts*shirtPrice; //the total cost of shirts is the number of shirts times the price of one shirt
+beltsTotal=numBelts*beltPrice; //the total cost of belts is the number of belts times the price of one belt
+subtotal=(pantsTotal)+(shirtsTotal)+(beltsTotal); //the subtotal is the sum of the total of each item
+salesTax=(pantsTotal*paSalesTax)+(shirtsTotal*paSalesTax)+(beltsTotal*paSalesTax); //the (total) sales tax is the sum of the total cost of each item times sales tax 
 
-//print the calculations
-//System.out.println("Trip 1 was "+distanceTrip1+" miles");
+//print the calculations; don't forget to explicitly cast the calculations so that there are only two digits after the decimal point
 System.out.println("The total cost of pants was $"+(double) ((int) (pantsTotal*100))/100);
 System.out.println("The total cost of shirts was $"+(double) ((int) (shirtsTotal*100))/100);
 System.out.println("The total cost of belts was $"+(double) ((int) (beltsTotal*100))/100);
