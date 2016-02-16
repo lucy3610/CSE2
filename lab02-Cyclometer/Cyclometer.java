@@ -29,7 +29,7 @@ double wheelDiameter=27.0,  // wheel diameter of the bicycle to calculate the di
 // Above gives distance in inches
 //(for each count, a rotation of the wheel travels
 //the diameter in inches times PI)
-    distanceTrip1/=inchesPerFoot*feetPerMile; // Gives distance in miles
+    distanceTrip1=inchesPerFoot*feetPerMile; // Gives distance in miles
     distanceTrip2=countsTrip2*wheelDiameter*PI/inchesPerFoot/feetPerMile;
     totalDistance=distanceTrip1+distanceTrip2;
 //Print out the output data.
