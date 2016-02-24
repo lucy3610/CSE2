@@ -16,12 +16,9 @@ double wheelDiameter=27.0,  // wheel diameter of the bicycle to calculate the di
       inchesPerFoot=12,   // conversion factor between inches to feet
       secondsPerMinute=60;  // converstion factor between seconds and minutes
     double distanceTrip1, distanceTrip2,totalDistance; 
-    System.out.println("Trip 1 took "+
-                (secsTrip1/secondsPerMinute)+" minutes and had "+
-                 countsTrip1+" counts.");
-           System.out.println("Trip 2 took "+
-                (secsTrip2/secondsPerMinute)+" minutes and had "+
-                 countsTrip2+" counts.");// prints out the value of how long trip 1 and 2 took
+    // prints out the value of how long trip 1 and 2 took
+    System.out.println("Trip 1 took "+ (secsTrip1/secondsPerMinute)+" minutes and had "+ countsTrip1+" counts.");
+    System.out.println("Trip 2 took "+ (secsTrip2/secondsPerMinute)+" minutes and had "+countsTrip2+" counts.");
 //run the calculations; store the values
 //
 //
@@ -33,7 +30,7 @@ double wheelDiameter=27.0,  // wheel diameter of the bicycle to calculate the di
     distanceTrip2=countsTrip2*wheelDiameter*PI/inchesPerFoot/feetPerMile;
     totalDistance=distanceTrip1+distanceTrip2;
 //Print out the output data.
-           System.out.println("Trip 1 was "+distanceTrip1+" miles");
+    System.out.println("Trip 1 was "+distanceTrip1+" miles");
     System.out.println("Trip 2 was "+distanceTrip2+" miles");
     System.out.println("The total distance was "+totalDistance+" miles");
     }  //end of main method   
