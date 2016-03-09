@@ -13,20 +13,27 @@ public class CardGenerator{
     
 //  add main method    
 public static void main(String[] args) {
-    int card = (int)(Math.random()*(52+1))+baseNum;
-    int card = (int)(Math.random()*13)+2;
+    int card = (int)(Math.random()*53)+1;
+     String suit = " ";
     if (card >= 1 && card <= 13){
-        System.out.print("Diamonds");
+        suit = "Diamonds";
     }
     else if (card >= 14 && card <= 26){
-        System.out.print("Clubs");
+        suit = "Clubs";
+        card -= 13;
     }
     else if (card >= 27 && card <= 39){
-        System.out.print("Hearts");
+        suit = "Hearts";
+        card -= 26;
     }
         else if (card >= 40 && card <= 52){
-        System.out.print("Spades");
+        suit = "Spades";
+        card -= 39;
     }
+    if ( card > 1 && card < 11 || card > 14 && card < 24 || card > 27 && card < 37 || card > 40 && card < 50 ){
+        System.out.println("You picked the " + card + " of " + suit);
+    }
+    else{
     switch( card % 13 ){
     case 1:
      // 1, 14, 27, 40
@@ -44,9 +51,7 @@ public static void main(String[] args) {
     // 13, 26, 39, 52)
     System.out.print("King");
         }
-        System.out.println("You picked the " + card + "of Diamonds");
-        System.out.println("You picked the " + card + "of Clubs");
-        System.out.println("You picked the " + card + "of Hearts");
-        System.out.println("You picked the " + card + "of Spades");
+        System.out.println("You picked the " + card + " of " + suit);
+        }
     }
 }

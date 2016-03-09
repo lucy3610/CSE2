@@ -1,0 +1,16 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Lucy Swett
+//2-9-16
+//Arithmetic Program
+//
+
+//  define a class
+public class Sunny{
+    
+//  add main method    
+public static void main(String[] args) {
+  boolean Lucy =  2 < 3 || 5*2 == 11 && 5 > 6 ;
+  System.out.print(Lucy);
+
+}
+}
