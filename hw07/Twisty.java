@@ -61,33 +61,33 @@ public class Twisty {
         }
 
         //print out the Twistys
-        for (int a = 0; a < width; a++) {
-            for (int b = 0; b < length; b++) {
-                if ((b / width) % 2 == 0) {
+        for (int a = 0; a < width; a++) { // loop the width
+            for (int b = 0; b < length; b++) { // loop the columns
+                if ((b / width) % 2 == 0) { // determine where the # goes in each column
                     if (b % width == a) {
                         System.out.print("#");
                     }
-                    else if ((width - 1 - b % width) == a) {
+                    else if ((width - 1 - b % width) == a) { // determine where the / goes in each line
                         System.out.print("/");
                     }
-                    else {
-                        System.out.print(" ");
+                    else { // if neither, print a space
+                        System.out.print(" "); 
                     }
                 }
-                else {
+                else { // determine where each \ goes in each column
                     if (b % width == a) {
                         System.out.print("\\");
                     }
-                    else if ((width - 1 - b % width) == a) {
+                    else if ((width - 1 - b % width) == a) { // determine where the # goes in each line
                         System.out.print("#");
                     }
-                    else {
+                    else { // if neither, print a space
                         System.out.print(" ");
                     }
                 }
             }
 
-            System.out.println("");
+            System.out.println(""); // make the code end on another line
 
         }
     }
