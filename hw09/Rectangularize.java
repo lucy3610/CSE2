@@ -1,11 +1,11 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Lucy Swett
-//Game Java Program
+//Rectangularize Java Program
 //
 //  first compile the program
-//      javac Games.java
+//      javac Rectangularize.java
 //  run the program
-//      java Games//
+//      java Rectangularize//
 //
 //create an import statement so the scanner class will work
 import java.util.Scanner;

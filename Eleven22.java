@@ -65,4 +65,8 @@ if ( n < 0 ){
        }
        System.out.println(".");
     }
+    Random randomGenerator = new Random();
+                        // Use the nextInt() method of Random() class to generate a random integer 
+                        int randomInt = randomGenerator.nextInt(2);
+                        System.out.println(randomInt);
 }

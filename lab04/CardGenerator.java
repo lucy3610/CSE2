@@ -30,30 +30,37 @@ public class CardGenerator {
             suit = "Spades";
             card -= 39;
         }
-        // if (card > 1 && card < 11 || card > 14 && card < 24 || card > 27 && card < 37 || card > 40 && card < 50) {
-           //  System.out.println("You picked the " + card + " of " + suit);
+        if (card > 1 && card < 11 || card > 14 && card < 24 || card > 27 && card < 37 || card > 40 && card < 50) {
+            System.out.println("You picked the " + card + " of " + suit);
         }
         else {
+            String name = "";
             switch (card % 13) {
                 case 1:
                     // 1, 14, 27, 40
-                    System.out.print("Ace");
+                    name = "Ace";
                     break;
-                case 2:
-                    // 11, 24, 37, 50)
-                    System.out.print("Jack");
+                case 11:
+                    // 11, 24, 37, 50
+                    name = "Jack";
                     break;
-                case 3:
-                    // 12, 25, 38, 51)
-                    System.out.print("Queen");
+                case 12:
+                    // 12, 25, 38, 51
+                    name ="Queen";
                     break;
-                case 4:
-                    // 13, 26, 39, 52)
-                    System.out.print("King");
+                case 0:
+                    // 13, 26, 39, 52
+                    name = "King";
                     break;
+                default:
+                    name = Integer.toString(card);
+                        break;
+                
+                    }
+                    System.out.println("You picked the " + name + " of " + suit);
             }
             
-        }
-        System.out.println("You picked the " + card + " of " + suit);
+        
+        
     }
 }

@@ -111,7 +111,35 @@ public class Games {
             }
             
                 public static void scrambler() { // create a method for scrambler
-                    System.out.println("This is where the code is supposed to work!");
+                    System.out.print("Please enter an word: ");
+                    Scanner myScanner = new Scanner(System.in); // create a scanner
+                    String character = myScanner.nextLine();
+                    int length = character.length(); // determine how many characters the string is
+                    int j = 0;
+                    Random randomGenerator = new Random();
+                    String word = "";
+                    while (j < 2){
+                        word = "";
+                        
+                    // Use the nextInt() method of Random() class to generate a random integer 
+                    int randomInt = randomGenerator.nextInt(length);
+                        word += character.charAt(randomInt);
+                        
+                    
+                        
+                    for (int i=1; i < length; i++) {
+                        if (i == randomInt) {
+                            word += character.charAt(0);
+                        }
+                        else {
+                            word += character.charAt(i);
+                        }
+                    }
+                    j++;
+                    character = word;
+                    }
+                        
+                        System.out.println(word);
                     /*String word = " ";
         String[] word = words.trim().split(" ");
         for (int i = 0; i < word.length; i++) {
