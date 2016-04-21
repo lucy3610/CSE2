@@ -36,14 +36,89 @@ public class TwistGenerator {
                 myScanner.next(); // keep asking for input
             }
         }
+        for (int i = 0; i < length; i++){
+            for (int j = 0; j < length; j++) {
+                if (i == j || j == length-j-1) {
+                    System.out.print(j);
+                }
+                else {
+                    System.out.print(" ");
+                }
+                System.out.println("");
+            }
+        }
+        /*for (int a = 0; a < 3; a++) { // loop the width
+            for (int b = 0; b < length; b++) { // loop the columns
+                if ((b / 3) % 2 == 0) { // determine where the # goes in each column
+                    if (b % 3 == (1)) {
+                        if (a % 3 == 1) {
+                            System.out.print("A");
+                        }
+                        else {
+                            System.out.print("B");
+                        }
+                    }
+                    else if (b % 3 == (a + 2)) {
+                        System.out.print("C");
+                    }
+                    else if (b % 3 == a) {
+                        System.out.print("D");
+                    }
+                    else if ((2 - b % 3) == a) { // determine where the / goes in each line
+                        System.out.print("E");
+                    }
+                    else { // if neither, print a space
+                        System.out.print("F");
+                    }
+                }
+            */
+              /*  else { // determine where each \ goes in each column
+                    if (b % 3 == (1)) {
+                        if (a % 3 == 1) {
+                            System.out.print("X");
+                        }
+                        else {
+                            System.out.print(" ");
+                        }
+                    }
+                    else if (b % 3 == (a + 2)) {
+                        System.out.print("/");
+                    }
+                    else if (b % 3 == a) {
+                        System.out.print("\\");
+                    }
+                    else if ((2 - b % 3) == a) { // determine where the / goes in each line
+                        System.out.print("/");
+                    }
+                    else { // if neither, print a space
+                        System.out.print(" ");
+                    }*/ 
+                    /*
+                    if (b % 3 == a) {
+                        System.out.print("G");
+                    }
+                    else if ((2 - b % 3) == a) { // determine where the # goes in each line
+                        System.out.print("H");
+                    }
+                    else { // if neither, print a space
+                        System.out.print("I");
+                    }
+
+                } 
+            }
+        }
+        System.out.println(""); // make the code end on another line
+
+*/
+        /*
         for (int a = 0; a < 3; a++) { // loop the width
             for (int b = 0; b < length; b++) { // loop the columns
             if ( a  % 2 == 1 ){
                 if ( (b + 1) % 2 == 1){
-                        System.out.print("X");
+                        System.out.print(" X");
                 }
             }
-                if ((b / 3) % 2 == 0) { // determine where the # goes in each column
+                else ((b / 3) % 2 == 0) { // determine where the # goes in each column
                     if (b % 3 == a) {
                         System.out.print("\\");
                     }
@@ -53,8 +128,8 @@ public class TwistGenerator {
                     else { // if neither, print a space
                         System.out.print(" ");
                     }
-                }
-                /* else { // determine where each \ goes in each column
+                }*/
+        /* else { // determine where each \ goes in each column
                     if (b % 3 == a) {
                         System.out.print("3");
                     }
@@ -64,10 +139,10 @@ public class TwistGenerator {
                     else { // if neither, print a space
                         System.out.print(" ");
                     }
-                } */
+                } 
             }
 
             System.out.println(""); // make the code end on another line
-        }
+        }*/
     }
 }

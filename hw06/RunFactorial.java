@@ -20,7 +20,7 @@ public class RunFactorial{
         while (true){
           if (myScanner.hasNextInt() ){ // make sure the input is an integer
              n = myScanner.nextInt(); // this statement accepts the user's input
-             if ( !(n > 9 && n < 16) ){ // if the integer is outside the correct bounds, ask for new input
+             if ( !(n >= 9 && n <= 16) ){ // if the integer is outside the correct bounds, ask for new input
                System.out.println("Sorry, please enter a number between 9 and 16: ");
                myScanner.nextLine(); // accepts new input
               }

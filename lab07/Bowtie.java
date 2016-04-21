@@ -17,6 +17,7 @@ public class Bowtie{
         Scanner myScanner = new Scanner(System.in); //
         boolean acceptable = false; // check for integers between 5 and 30
         int nStars = 0; // initialize variable
+        int n = 0;
         while (!acceptable) {
             System.out.print("Enter an odd number between 3 and 33: ");
             //check if it's an integer
@@ -35,8 +36,8 @@ public class Bowtie{
                 myScanner.next(); // keep asking for input
             }
         }
-        System.out.println("Please enter: ")
-        int nStars = 1;
+        System.out.println("Please enter: ");
+        nStars = 1;
         int a = 1;
         nStars = myScanner.nextInt(); // accept the input
         String space = "* ";

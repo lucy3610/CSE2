@@ -24,6 +24,29 @@ public class HelloWorld{
         System.out.println("########################");
         System.out.println("test");
         
+        
+    /*    
+        for (int i = 9; i > 0; i--){
+    for (int j = 0; j < i-1; j++){
+            System.out.print(" ");
+        }
+        System.out.println(i);
+    } */
         //test/testtest
+for (int i = 0; i < 6; i++){
+    for (int j = 1; j < i; j++){
+            System.out.print(j);
+        }
+        System.out.println(" ");
+}
+int a = 1;
+    int down = 1;
+    down = a - 1;
+for (a = 0; a < 6; a++){
+    for (int b = 1; b < down; b--){
+            System.out.print(down);
+        }
+        System.out.println(" ");
+    } 
     }
 }
